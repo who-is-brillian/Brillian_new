@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mogra&family=Oleo+Script:wght@400;700&family=Protest+Guerrilla&family=Rubik+Glitch+Pop&family=Rubik+Scribble&family=Sriracha&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!--  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Mogra&family=Oleo+Script:wght@400;700&family=Protest+Guerrilla&family=Rowdies:wght@300;400;700&family=Rubik+Glitch+Pop&family=Rubik+Mono+One&family=Rubik+Scribble&family=Sriracha&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!-- ICONS -->
+<script src="https://unpkg.com/feather-icons"></script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<style>
+:root{
+  --primary: rgb(255, 0, 0);
+  --bg: #202020;
+  --color-text: #fff;
+  --color-text2: #000;
+}
+
+  *,
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 15px;
+  }
+  body {
+    color: var(--color-text2);
+    overflow-x: hidden;
+    background-color: #ededed;
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .body {
+    color: var(--color-text);
+    background-size: 100%;
+    overflow-x: hidden;
+    background-color: var(--bg);
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  #parallax-img {
+    background-image: url(img/parallax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2b2b2b72;
+    border-bottom: 2px solid #ff0000;
+    position: fixed;
+    padding-right: 100%;
+    align-items: center;
+  }
+  #navbar h2{
+    margin-left: 250px;
+    cursor: pointer;
+    color: var(--primary);
+  }
+  a {
+    text-decoration: none;
+    margin: 20px;
+    margin-right: 80px;
+    color: #ffffff;
+    align-items: center;
+  }
+  .navbar-nav {
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 360px;
+  }
+  a:hover {
+    transition: 0.3s ease-in-out;
+
+    color: rgb(255, 0, 0);
+  }
+  .logo {
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    margin-left: 30px;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    color: #ff0000;
+  }
+  .logo:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+  #contain {
+    padding: auto 20px;
+    justify-content: flex-end;
+  }
+  #contain p{
+    color: var(--color-text);
+  }
+  #contain h1, span {
+    margin: 0;
+    font-size: 100px;
+    font-family: "serif";
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 15px;
+    color: var(--color-text);
+  }
+  .iklan{
+    animation: change-color 10s infinite;
+    width: 100%;
+    height: 500px;
+  }
+  @keyframes change-color{
+    0%,100%{
+    left: 0px;
+    background-image: url(img2/Acer-predator.jpg);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 300px;
+    }
+    20%{
+      
+      background-image: url(img2/Xiaomi-monitor.webp);
+      background-position: center;
+    }
+    30%{
+      
+      background-image: url(img2/Samsung-odyssey.jpg);
+      background-position: center;
+    }
+    50%{
+      
+      background-image: url(img2/Monitor-samsung.jpg);
+      background-position:center;
+    }
+    70%{
+      
+      background-image: url(img2/DELL-alienware1.jpg);
+      background-position: center;
+    }
+    80%{
+      
+      background-image: url(img2/ASUS\ ROG.jpg);
+      background-position: center;
+    }
+    90%{
+      
+      background-image: url(img2/Asus-monitor.jpg);
+      background-position: center;
+    }
+  }
+  #contain p {
+    margin: 0;
+    margin-right: 250px;
+    margin-left: 20px;
+    padding-top: 200px;
+  }
+  span {
+    color: rgb(255, 0, 0);
+    margin: 0;
+  }
+  .home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #case,#monitor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-content{
+    height: 260px;
+    width: 780px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: black;
+    padding-bottom: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .text-content{
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .case1{
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 1px 1px 3px 1px  rgba(0, 0, 0, 0.3);
+    margin-left: 80px;
+  }
+  .case2, .case3, .case4, .case5, .case6,.case7{
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 1px 1px 3px 1px  rgba(0, 0, 0, 0.3);
+  }
+footer {
+  background-color: rgb(86, 86, 86);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  padding: 1rem 0 3rem;
+  padding-bottom: 5%;
+  color: #ff0000;
+  align-items: center;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #ff0000;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #ff0000;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  margin-right: 50px;
+}
+
+
+/* LIGHT-BOX START */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox.hidden {
+    display: none;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.next-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width: 760px) {
+  html{
+    font-size: 55%;
+  }
+  #parallax-img{
+    width: 100%;
+  }
+  .navbar-nav{
+    margin-left:200px;
+  }
+  .box-content{
+    height: 260px;
+    width: 650px;
+  }
+  .case1{
+    margin-left:250px;
+    height: 250px;
+    width: 150px;
+  }
+  .case2, .case3,.case4,.case5,.case6,.case7{
+    height: 250px;
+    width: 150px;
+  }
+}
+      /* LIGHT-BOX END */
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="parallax-img">
+    <header id="navbar">
+      <h1 class="logo">BLS</h1>
+      <div class="navbar-nav">
+        <a href="#">HOME</a>
+        <a href="#monitor">MONITOR</a>
+        <a href="#case">CASE</a>
+      </div>
+      <h2>MODE</h2>
+    </header>
+    <!-- NAVBAR END -->
+
+    <!-- CONTAINER -->
+    <section id="contain">
+      <p>
+        Toko barang elektronik terpercaya<br />
+        hanya di
+      </p>
+      <div class="home">
+        <h1>BRILLIAN<br/><span>SHOP</span></h1>
+      </div>
+    </div>
+  </section>
+  <!-- CONTAINER END -->
+  
+  <div class="iklan"></div>
+    <!-- CONTENT 1 -->
+    <section id="monitor">
+      <h1 class="text-content" >Monitor</h1>
+      <div class="box-content">
+        <div class="case1"> 
+          <img src="img2/Asus-monitor.jpg" width="150px" alt="ASUS PB287Q 28in 3840 x 2160 TN 1ms Monitor, 2x HDMI, DP" class="gallery-img">
+          <h3>ASUS PB287Q 28in 3840 x 2160</h3>
+          <p>Rp.1.150.000</p>
+          <div class="layer full"></div>
+        </div>
+        <div class="case2">
+          <img src="img2/DELL-alienware1.jpg" width="150px" alt="Digital Alliance N10" class="gallery-img">
+          <h3>Dell Alienware 25 Gaming</h3>
+          <p>Rp.2.200.000</p>
+        </div>
+        <div class="case3">
+          <img src="img2/Monitor-samsung.jpg" width="150px" alt="Samsung FHD Monitor (S26R350)" class="gallery-img">
+          <h3>Samsung FHD (S26R350)</h3>
+          <p>Rp.3.050.000</p>
+        </div>
+        <div class="case4">
+          <img src="img2/Xiaomi-monitor.webp" width="150px" alt="Xiaomi Mi Curved Gaming Monitor 34 inch" class="gallery-img">
+          <h3>Xiaomi Mi Curved Gaming Monitor</h3>
+          <p>Rp.3.500.000</p>
+        </div>
+        <div class="case5">
+          <img src="img2/ASUS ROG.jpg" width="150px" alt="Asus-ROG" class="gallery-img">
+          <h3>Asus ROG</h3>
+          <p>Rp.5.500.000</p>
+         </div>
+         <div class="case6">
+          <img src="img2/Acer-predator.jpg" width="150px" alt="Acer’s Predator Z35P Curved" class="gallery-img">
+          <h3>Acer’s Predator Z35P Curved</h3>
+          <p>Rp.5.500.000</p>
+         </div>
+         <div class="case7">
+          <img src="img2/Samsung-odyssey.jpg" width="150px" alt="Samsung Odyssey G7 Series" class="gallery-img">
+          <h3>Samsung Odyssey G7 Series</h3>
+          <p>Rp.5.500.000</p>
+         </div>
+      </div>
+      <div id="lightbox" class="hidden">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <span class="next-btn" onclick="nextImage()">Next &rarr;</span>
+        <img src="" alt="" id="lightbox-img">
+      </div>
+    </section>
+    <!-- CONTENT 1 END -->
+
+    <!-- CONTENT 2 START -->
+    <section id="case">
+      <h1 class="text-content" >Case PC</h1>
+      <div class="box-content">
+        <div class="case1"> 
+          <img src="img/Armageddon Nimitz TR5000 productnation.jpg" width="150px" alt="Armageddon Nimitz TR5000" class="gallery-img">
+          <h3>Armageddon Nimitz TR5000</h3>
+          <p>Rp.1.150.000</p>
+        </div>
+        <div class="case2">
+          <img src="img/Digital Alliance N10 productnation1.jpg" width="150px" alt="Digital Alliance N10" class="gallery-img">
+          <h3>Digital Alliance N10</h3>
+          <p>Rp.1.200.000</p>
+        </div>
+        <div class="case3">
+          <img src="img/NZXT H510 productnation1.jpg" width="150px" alt="NZXT H510" class="gallery-img">
+          <h3>NZXT H510</h3>
+          <p>Rp.1.050.000</p>
+        </div>
+        <div class="case4">
+          <img src="img/Cougar Panzer Max Full Tower productnation1.jpg" width="150px" alt="Cougar Panzer Max Full Tower" class="gallery-img">
+          <h3>Cougar Panzer Max Full Tower</h3>
+          <p>Rp.1.500.000</p>
+        </div>
+        <div class="case5">
+          <img src="img/Cougar Turret RGB productnation1.jpg" width="150px" alt="Cougar Turret RGB" class="gallery-img">
+          <h3>Cougar Turret RGB</h3>
+          <p>Rp.800.000</p>
+         </div>
+         <div class="case6">
+          <img src="img/Vetroo K3.jpg" width="150px" alt="Vetroo K3 Mid-Tower ATX Micro-ATX" class="gallery-img">
+          <h3>Vetroo K3 Mid-Tower ATX Micro-ATX </h3>
+          <p>Rp.3.500.000</p>
+         </div>
+         <div class="case7">
+          <img src="img/KOLINK Citadel Mesh Micro-ATX RGB.jpg" width="150px" alt="Buy KOLINK Citadel Mesh Micro-ATX RGB" class="gallery-img">
+          <h3>Buy KOLINK Citadel Mesh Micro-ATX RGB</h3>
+          <p>Rp.6.500.000</p>
+         </div>
+      </div>
+      <div id="lightbox" class="hidden">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <span class="next-btn" onclick="nextImage()">Next &rarr;</span>
+        <img src="" alt="" id="lightbox-img">
+      </div>
+    </section>
+    <!-- CONTENT 2 END -->
+    <!-- footer start -->
+<footer>
+  <div class="socials">
+    <a href="https://www.instagram.com/brlyn_mk/?next=%2F"><i data-feather="instagram"></i></a>
+    <a href="https://web.facebook.com/profile.php?id=100056192124574"><i data-feather="facebook"></i></a>
+    <a href="https://twitter.com/Brilliansj"><i data-feather="twitter"></i></a>
+  </div>
+  
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#us">contact</a>
+  </div>
+  
+  <div class="credit">
+  <p>created by Brlyn-mk | &copy; 2023.</p>
+  </div>
+  </footer>
+  <!-- footer end -->
+
+    <script>
+    feather.replace();
+
+    const galleryImages = document.querySelectorAll('.gallery-img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+        currentIndex = index;
+        const src = galleryImages[currentIndex].getAttribute('src');
+        const alt = galleryImages[currentIndex].getAttribute('alt');
+        lightboxImg.setAttribute('src', src);
+        lightboxImg.setAttribute('alt', alt);
+        lightbox.classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+        lightbox.classList.add('hidden');
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        const src = galleryImages[currentIndex].getAttribute('src');
+        const alt = galleryImages[currentIndex].getAttribute('alt');
+        lightboxImg.setAttribute('src', src);
+        lightboxImg.setAttribute('alt', alt);
+    }
+
+    galleryImages.forEach((img, index) => {
+        img.addEventListener('click', () => openLightbox(index));
+    });
+
+    const h2 = document.getElementsByTagName('h2')[0]
+    h2.addEventListener('click', function(){
+      document.body.classList.toggle('body');
+    });
+    </script>
+  </body>
+</html>
