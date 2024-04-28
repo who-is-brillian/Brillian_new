@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <header id="home" class="parallax1 background">
+      <nav id="navbar">
+        <a href="#" class="home">Home</a>
+        <div class="dropdown">
+          <p class="category">Category</p>
+          <div class="dropdown-content">
+            <a href="#bukukomik">Komik</a>
+            <a href="#bukuteknologi">Teknologi</a>
+            <a href="#bukusejarah">Sejarah</a>
+          </div>
+        </div>
+        <a href="#" id="keranjang">Keranjang</a>
+      </nav>
+      <section>
+        <div class="toggleContent" style="display: none">
+          <div class="list-keranjang">
+            <h1>Keranjang Belanja</h1>
+
+            <section id="cart4">
+              <img
+                src="img/4.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Demon slayer <br />
+                <p>Rp.100.000</p>
+              </h1>
+              <a href="#" id="th" class="trash4" onclick="trashbtn4()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+
+
+            <section id="cart1">
+              <img
+                src="img/1.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Naruto <br />
+                <p>Rp.120.000</p>
+              </h1>
+              <a href="#" id="th" class="trash1" onclick="trashbtn1()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+ 
+
+            <section id="cart3">
+              <img
+                src="img/3.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Haikyuuu <br />
+                <p>Rp.180.000</p>
+              </h1>
+              <a href="#" id="th" class="trash3" onclick="trashbtn3()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+ 
+            <section id="cart2">
+              <img
+                src="img/2.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Jujutsu Kaisen <br />
+                <p>Rp.150.000</p>
+              </h1>
+              <a href="#" id="th" class="trash2" onclick="trashbtn2()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+ 
+            <section id="cart5">
+              <img
+                src="img/5.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Solo Leveling <br />
+                <p>Rp.110.000</p>
+              </h1>
+              <a href="#" id="th" class="trash5" onclick="trashbtn5()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart6">
+              <img
+                src="img/6.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Teknologi perkantoran <br />
+                <p>Rp.240.000</p>
+              </h1>
+              <a href="#" id="th" class="trash6" onclick="trashbtn6()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart7">
+              <img
+                src="img/7.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Media dan teknologi pembelajaran <br />
+                <p>Rp.180.000</p>
+              </h1>
+              <a href="#" id="th" class="trash7" onclick="trashbtn7()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart8">
+              <img
+                src="img/8.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Pengantar TI dan Komunikasi... <br />
+                <p>Rp.180.000</p>
+              </h1>
+              <a href="#" id="th" class="trash8" onclick="trashbtn8()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart9">
+              <img
+                src="img/9.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Teknologi Informasi Pendidikan<br />
+                <p>Rp.150.000</p>
+              </h1>
+              <a href="#" id="th" class="trash9" onclick="trashbtn9()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart10">
+              <img
+                src="img/10.png"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Analisa dan perancangan sistem Informasi <br />
+                <p>Rp.160.000</p>
+              </h1>
+              <a href="#" id="th" class="trash10" onclick="trashbtn10()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart11">
+              <img
+                src="img/11.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Sejarah Dunia <br />
+                <p>Rp.80.000</p>
+              </h1>
+              <a href="#" id="th" class="trash11" onclick="trashbtn11()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart12">
+              <img
+                src="img/12.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Pengantar Ilmu Sejarah<br />
+                <p>Rp.60.000</p>
+              </h1>
+              <a href="#" id="th" class="trash12" onclick="trashbtn12()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart13">
+              <img
+                src="img/13.png"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                sejarah Ekonomi islam <br />
+                <p>Rp.100.000</p>
+              </h1>
+              <a href="#" id="th" class="trash13" onclick="trashbtn13()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart14">
+              <img
+                src="img/14.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Sejarah Indonesia <br />
+                <p>Rp.90.000</p>
+              </h1>
+              <a href="#" id="th" class="trash14" onclick="trashbtn14()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+            <section id="cart15">
+              <img
+                src="img/15.jpg"
+                width="40px"
+                alt=""
+              />
+              <h1>
+                Sejarah tingkatan 4 <br />
+                <p>Rp.120.000</p>
+              </h1>
+              <a href="#" id="th" class="trash15" onclick="trashbtn15()">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="img/feather-sprite.svg#trash" />
+                </svg>
+              </a>
+            </section>
+          </div>
+        </div>
+        <h1 class="name">
+          Brillian<span><br />Store</span>
+        </h1>
+        <button>Beli Sekarang</button>
+        <p class="penawaran">
+          Dapatkan diskon penawaran buku hingga 20%, Yuk buruan beli
+        </p>
+      </section>
+      <p>&darr;</p>
+    </header>
+
+      <div class="parallax komik" id="products" x-data="products">
+        <h1 class="judul-halaman">BUKU KOMIK</h1>
+        <section id="bukukomik">
+          <div class="bukukomik1">
+            <img
+              src="img/1.jpg"
+              alt="naruto"
+              width="145px"
+              height="205px"
+            />
+            <h3>Naruto vol.1</h3>
+            <p>Rp.120.000.00</p>
+            <button class="add" onclick="changeOpacity1()">Keranjang</button>
+            <button class="add" onclick="desc1()">Deskripsi Buku</button>
+          </div>
+          <div class="bukukomik2">
+            <img
+              src="img/2.jpg"
+              alt="jujutsu-kaisen"
+              width="145px"
+              height="205px"
+            />
+            <h3>Jujutsu Kaisen vol.1</h3>
+            <p>Rp.150.000.00</p>
+            <button class="add" onclick="changeOpacity2()">Keranjang</button>
+            <button class="add" onclick="desc2()">Deskripsi Buku</button>
+            </p>
+          </div>
+          <div class="bukukomik3">
+            <img
+              src="img/3.jpg"
+              alt="Haikyuuu"
+              width="145px"
+              height="205px"
+            />
+            <h3>Haikyuuu vol.3</h3>
+            <p>Rp.180.000.00</p>
+            <p id="card3" class="keranjang3">
+              <button class="add"  onclick="changeOpacity3()">Keranjang</button>
+              <button class="add" onclick="desc3()">Deskripsi Buku</button>
+          </div>
+          <div class="bukukomik4">
+            <img
+              src="img/4.jpg"
+              alt="Demon-slayer"
+              width="145px"
+              height="205px"
+            />
+            <h3>Demon slayer vol.1</h3>
+            <p>Rp.100.000.00</p>
+            <button class="add" onclick="changeOpacity4()">Keranjang</button>
+            <button class="add" onclick="desc4()">Deskripsi Buku</button>
+          </div>
+          <div class="bukukomik5">
+            <img
+            src="img/5.jpg"
+              alt="Solo-leveling"
+              width="145px"
+              height="205px"
+            />
+            <h3>Solo Leveling vol.1</h3>
+            <p>Rp.110.000.00</p>
+            <button class="add" onclick="changeOpacity5()">Keranjang</button>
+            <button class="add" onclick="desc5()">Deskripsi Buku</button>
+          </div>
+        </section>
+      </div>
+      <div class="parallax teknologi" id="products" x-data="products">
+        <h1 class="judul-halaman-teknologi">BUKU TEKNOLOGI</h1>
+        <section id="bukuteknologi">
+          <div class="bukuteknologi1">
+            <img
+            src="img/6.jpg"
+              alt=" Teknologi
+            perkantoran"
+              width="145px"
+              height="205px"
+            />
+            <h3>Teknologi perkantoran</h3>
+            <p>Rp.240.000.00</p>
+            <button class="add" onclick="changeOpacity6()">Keranjang</button>
+            <button class="add" onclick="desc6()">Deskripsi Buku</button>
+          </div>
+          <div class="bukuteknologi2">
+            <img
+            src="img/7.jpg"
+              alt="Media & teknologi"
+              width="145px"
+              height="205px"
+            />
+            <h3>Media dan teknologi pembelajaran</h3>
+            <p>Rp.180.000.00</p>
+            <button class="add" onclick="changeOpacity7()">Keranjang</button>
+            <button class="add" onclick="desc7()">Deskripsi Buku</button>
+          </div>
+          <div class="bukuteknologi3">
+            <img
+            src="img/8.jpg"
+              alt="Pengantar TI"
+              width="145px"
+              height="205px"
+            />
+            <h3>Pengantar TI dan Komunikasi...</h3>
+            <p>Rp.180.000.00</p>
+            <button class="add" onclick="changeOpacity8()">Keranjang</button>
+            <button class="add" onclick="desc8()">Deskripsi Buku</button>
+          </div>
+          <div class="bukuteknologi4">
+            <img
+            src="img/9.jpg"
+              alt="Teknologi
+            Informasi Pendidikan"
+              width="145px"
+              height="205px"
+            />
+            <h3>Teknologi Informasi Pendidikan</h3>
+            <p>Rp.150.000.00</p>
+            <button class="add" onclick="changeOpacity9()">Keranjang</button>
+            <button class="add" onclick="desc9()">Deskripsi Buku</button>
+          </div>
+          <div class="bukuteknologi5">
+            <img
+            src="img/10.png"
+              alt="Analisa dan
+            perancangan sistem Informasi"
+              width="145px"
+              height="205px"
+            />
+            <h3>Analisa dan perancangan sistem Informasi</h3>
+            <p>Rp.160.000.00</p>
+            <button class="add" onclick="changeOpacity10()">Keranjang</button>
+            <button class="add" onclick="desc10()">Deskripsi Buku</button>
+          </div>
+        </section>
+      </div>
+      <div class="parallax sejarah" id="products" x-data="products">
+        <h1 class="judul-halaman-sejarah">BUKU SEJARAH</h1>
+        <section id="bukusejarah">
+          <div class="bukusejarah1">
+            <img
+            src="img/11.jpg"
+              alt=" Sejarah Dunia"
+              width="145px"
+              height="205px"
+            />
+            <h3>Sejarah Dunia</h3>
+            <p>Rp.80.000.00</p>
+              <button class="add" onclick="changeOpacity11()">Keranjang</button>
+              <button class="add" onclick="desc11()">Deskripsi Buku</button>
+          </div>
+          <div class="bukusejarah2">
+            <img
+            src="img/12.jpg"
+              alt="item.name"
+              width="145px"
+              height="205px"
+            />
+            <h3>Pengantar Ilmu Sejarah</h3>
+            <p>Rp.60.000.00</p>
+            <button class="add" onclick="changeOpacity12()">Keranjang</button>
+            <button class="add" onclick="desc12()">Deskripsi Buku</button>
+          </div>
+          <div class="bukusejarah3">
+            <img
+              src="img/13.png"
+              alt="sejarah Ekonomi islam"
+              width="145px"
+              height="205px"
+            />
+            <h3>sejarah Ekonomi islam</h3>
+            <p>Rp.100.000.00</p>
+            <button class="add" onclick="changeOpacity13()">Keranjang</button>
+            <button class="add" onclick="desc13()">Deskripsi Buku</button>
+          </div>
+          <div class="bukusejarah4">
+            <img
+            src="img/14.jpg"
+              alt="Sejarah Indonesia"
+              width="145px"
+              height="205px"
+            />
+            <h3>Sejarah Indonesia</h3>
+            <p>Rp.90.000.00</p>
+            <button class="add" onclick="changeOpacity14()">Keranjang</button>
+            <button class="add" onclick="desc14()">Deskripsi Buku</button>
+          </div>
+          <div class="bukusejarah5">
+            <img
+            src="img/15.jpg"
+              alt="Sejarah tingkatan 4"
+              width="145px"
+              height="205px"
+            />
+            <h3>Sejarah tingkatan 4</h3>
+            <p>Rp.120.000.00</p>
+            <button class="add" onclick="changeOpacity15()">Keranjang</button>
+            <button class="add" onclick="desc15()">Deskripsi Buku</button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/brlyn_mk/?next=%2F"><i data-feather="instagram"></i></a>
+        <a href="https://twitter.com/Brilliansj"><i data-feather="twitter"></i></a>
+        <a href="https://web.facebook.com/profile.php?id=100056192124574"><i data-feather="facebook"></i></a>
+      </div>
+  
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#bukukomik">Buku Komik</a>
+        <a href="#bukuteknologi">Buku Teknologi</a>
+        <a href="#bukusejarah">Buku Sejarah</a>
+      </div>
+  
+      <div class="credit">
+        <p>Created by <a href="">Brillian</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <script>
+      feather.replace()
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
